@@ -69,6 +69,8 @@ header {
 header h1 {
   font-size: 3rem;
   letter-spacing: 2px;
+  word-break: break-word;
+  white-space: normal;
 }
 .subtitle {
   font-size: 1.3rem;
@@ -342,7 +344,19 @@ footer {
   .section { padding: 1.2rem 0.7rem; }
 }
 @media (max-width: 700px) {
-  header h1 { font-size: 2.1rem; }
+  header {
+    padding: 3.5rem 0.5rem 2rem 0.5rem; /* Reduce top/bottom padding */
+    margin-top: 48px; /* Adjust if needed for nav */
+  }
+  header h1 {
+    font-size: 1.5rem; /* Smaller font for mobile */
+    word-break: break-word; /* Prevent overflow */
+    white-space: normal;
+  }
+  .profile-pic {
+    width: 90px;
+    height: 90px;
+  }
   .projects-grid { flex-direction: column; align-items: center; }
   .hex-card { width: 90vw; max-width: 320px; }
   nav ul { gap: 1rem; font-size: 0.95rem; }
