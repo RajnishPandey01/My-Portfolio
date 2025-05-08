@@ -3,119 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <title>My Professional Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <header>
-    <h1>Rajnish Pandey</h1>
-    <p>Developer | Designer | Innovator</p>
-  </header>
-
   <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#technologies">Web Technologies</a>
-    <a href="#projects">My Projects</a>
-    <a href="#achievements">My Achievements</a>
-    <a href="#contact">Contact</a>
+    <ul>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About Me</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#achievements" class="nav-link">My Achievements</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
   </nav>
-
-  <section class="hero">
-    <div class="profile-photo">
-      <!-- Ensure the image path is correct -->
-      <img src="images/profile.jpg" alt="Rajnish Pandey profile photo" />
+  <div class="hive-bg" id="hive-bg"></div>
+  <header id="home" class="section fade-in">
+    <div class="profile-container">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
     </div>
-    <h2>Hello, I'm Rajnish</h2>
-    <p>Passionate about coding, designing, and creating impactful solutions.</p>
-  </section>
-
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Rajnish Pandey, currently pursuing B.Tech in Computer Science Engineering at MCKV Institute of Engineering. I'm passionate about coding, problem-solving, and emerging technologies. I aim to build impactful software solutions and continuously improve my skills in areas like AI, web development, and cybersecurity.</p>
-  </section>
-
-  <section id="education" class="education">
-    <h2>My Education</h2>
-    <ul>
-      <li><strong>B.Tech in Computer Science Engineering</strong> - MCKV Institute of Engineering (2023-2027)</li>
-      <li><strong>Higher Secondary (ISC)</strong> - Ratnakar North Point School (2023)</li>
-      <li><strong>Secondary (ICSE)</strong> - Ratnakar North Point School (2021)</li>
-    </ul>
-  </section>
-
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Problem Solving</li>
-      <li>Graphic Designing</li>
-      <li>Version Control (Git)</li>
-      <li>Responsive Design</li>
-      <li>Team Collaboration</li>
-      <li>Leadership Qualities</li>
-    </ul>
-  </section>
-
-  <section id="technologies" class="technologies">
-    <h2>Programming Languages</h2>
-    <ul>
-      <li><i class="fab fa-html5" style="color:#e44d26;"></i> HTML </li>
-      <li><i class="fab fa-css3-alt" style="color:#264de4;"></i> CSS </li>
-      <li><i class="fab fa-js" style="color:#f0db4f;"></i> JavaScript</li>
-      <li><i class="fab fa-bootstrap" style="color:#7952b3;"></i> Bootstrap </li>
-      <li><i class="fas fa-code" style="color:#555;"></i> C </li>
-      <li><i class="fab fa-java" style="color:#007396;"></i> Java </li>
-      <li><i class="fab fa-python" style="color:#306998;"></i> Python </li>
-    </ul>
-  </section>
-
-  <section id="projects" class="projects ladder">
-    <h2>My Projects</h2>
-    <input type="text" id="searchInput" placeholder="Search Projects..." />
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>This website is my personal portfolio showcasing skills and projects.</p>
-    </div>
-    <div class="project">
-      <h3>What's in Soil</h3>
-      <p>Soil health analysis project using technology.</p>
-    </div>
-    <div class="project">
-      <h3>AI Crowd Management for Hospitals</h3>
-      <p>AI-driven solution to manage patient flow efficiently.</p>
-    </div>
-    <div class="project">
-      <h3>AI Chatbot</h3>
-      <p>Interactive chatbot powered by AI for better user engagement.</p>
-    </div>
-  </section>
-
-  <section id="achievements" class="achievements">
-    <h2>My Achievements</h2>
-    <ul>
-      <li>Nurturing Innovations Winner</li>
-      <li>Qualified for Phase 7 under "The Innovators Garage"</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:rajnishpandey902@gmail.com">rajnishpandey902@gmail.com</a></p>
-    <a class="resume-button" href="resume.pdf" download>Download Resume</a>
-    <div class="social-icons">
-      <a href="https://github.com/RajnishPandey01" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/rajnish-pandey-3b00642b6" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://x.com/@83Cse60779" target="_blank"><i class="fab fa-twitter"></i></a>
-    </div>
-  </section>
-
+    <h1>Rajnish Pandey</h1>
+    <p class="subtitle">Developer|Innovator</p>
+    <a href="assets/resume.pdf" class="resume-btn" download>Download Resume</a>
+    <a href="#projects" class="cta-btn">View My Work</a>
+  </header>
+  <main>
+    <section id="about" class="section fade-in">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Rajnish Pandey, currently pursuing B.Tech in Computer Science Engineering @ MCKV Institute of Engineering. 
+        I'm passionate about coding, problem-solving, and emerging technologies. I aim to build impactful software solutions and continuously improve my skills in areas like Al, web development, and cybersecurity.
+      </p>
+    </section>
+    <section id="skills" class="section fade-in">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <span>HTML</span>
+          <div class="progress-bar"><div class="progress" data-width="100%"></div></div>
+        </div>
+        <div class="skill">
+          <span>CSS</span>
+          <div class="progress-bar"><div class="progress" data-width="99%"></div></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+        </div>
+        <div class="skill">
+          <span>C</span>
+          <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Python</span>
+          <div class="progress-bar"><div class="progress" data-width="94%"></div></div>
+        </div>
+        <div class="skill">
+          <span>Java</span>
+          <div class="progress-bar"><div class="progress" data-width="94%"></div></div>
+        </div>
+      </div>
+    </section>
+    <section id="education" class="section fade-in">
+      <h2>Education</h2>
+      <ul class="education-list">
+        <li>
+          <strong>B.Tech in Computer Science</strong><br>
+          MCKV Institute of Engineering,2023 - 2027
+        </li>
+        <li>
+          <strong>Higher Secondary(ISC)</strong><br>
+          Ratnakar North Point School,2022 - 2023
+        </li>
+        <li>
+          <strong>Secondary(ICSE)</strong><br>
+          Ratnakar North Point School,2020 - 2021
+        </li>
+      </ul>
+    </section>
+    <section id="projects" class="section fade-in">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="hex-card">
+          <div class="hex-content">
+            <h3>Project One</h3>
+            <p>What's In Soil.</p>
+          </div>
+        </div>
+        <div class="hex-card">
+          <div class="hex-content">
+            <h3>Project Two</h3>
+            <p>AI_Crowd management For Hospitals.</p>
+          </div>
+        </div>
+        <div class="hex-card">
+          <div class="hex-content">
+            <h3>Project Three</h3>
+            <p>AI_Chatbot.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="achievements" class="section fade-in">
+      <h2>My Achievements</h2>
+      <div class="achievements-list">
+        <div class="achievement">
+          <div class="icon"><span>🏆</span></div>
+          <div class="counter" data-target="1">0</div>
+          <p>Winner's of "Nurturing Innonation"</p>
+        </div>
+        <div class="achievement">
+          <div class="icon"><span>🏆</span></div>
+          <div class="counter" data-target="2">0</div>
+          <p>Qualified for Phase 7 Under "Innovator Garage"</p>
+        </div>
+        <div class="achievement">
+          <div class="icon"><span>📜</span></div>
+          <div class="counter" data-target="3">0</div>
+          <p>Finalist Of Galgotia Internetional Hackathon(GIH)2k25</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section fade-in">
+      <h2>Contact</h2>
+      <div class="social-links">
+        <a href="https://github.com/RajnishPandey01" target="_blank" title="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        </a>
+        <a href="https://linkedin.com/in/rajnish-pandey-3b00642b6" target="_blank" title="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+        </a>
+        <a href="https://twitter.com/@83Cse60779" target="_blank" title="Twitter">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter">
+        </a>
+      </div>
+      <form>
+        <input type="text" placeholder="Your Name" required/>
+        <input type="email" placeholder="Your mail" required/>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
   <footer>
-    <p>&copy; 2025 Rajnish Pandey. All rights reserved.</p>
+    &copy; 2025 Rajnish Pandey. All rights reserved.
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
